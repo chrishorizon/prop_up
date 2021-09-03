@@ -1,11 +1,14 @@
 import React from 'react'
 
 const PersonCard = props => {
+
+    const {userName, age, hairColor} = props
+
     return (
         <div>
-            <h1>{props.userName}</h1>
-            <p>Age: {props.age}</p>
-            <p>Hair Color: {props.hairColor}</p>
+            <h1>{userName}</h1>
+            <p>Age: {age}</p>
+            <p>Hair Color: {hairColor}</p>
         </div>
     )
 }
